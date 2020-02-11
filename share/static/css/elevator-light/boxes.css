@@ -89,6 +89,12 @@ div.results .titlebox .titlebox-content {
 
 .titlebox .card-body {
     padding-top: 0;
+
+    /* .titlebox parent has 5px padding-bottom, so here we need subtract it
+     * from margin-top(1em) to get consistent border spacing(1em) for nested
+     * titleboxes. Take the borders of "Links", "Ticket metadata" and
+     * "History" on ticket display page for example */
+    padding-bottom: calc(1em - 5px);
 }
 
 /* Ticket display page colored top borders */
