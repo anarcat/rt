@@ -143,6 +143,7 @@ sub JSFiles {
         Chart.min.js
         chartjs-plugin-colorschemes.min.js
         jquery.jgrowl.min.js
+        selectize.min.js
         }, RT->Config->Get('JSFiles');
 }
 
