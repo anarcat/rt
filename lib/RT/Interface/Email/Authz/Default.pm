@@ -109,13 +109,6 @@ sub CheckACL {
         $RT::Logger->warning("Action '". ($args{'Action'}||'') ."' is unknown with no ticket");
         return;
     }
-
-
-    MailError(
-        Subject     => "Permission Denied",
-        Explanation => $msg,
-        FAILURE     => 1,
-    );
 }
 
 1;
