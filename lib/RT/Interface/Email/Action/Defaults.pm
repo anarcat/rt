@@ -105,12 +105,6 @@ sub _HandleCreate {
         MIMEObj   => $args{Message},
     );
     return if $id;
-
-    MailError(
-        Subject     => "Ticket creation failed: $args{Subject}",
-        Explanation => $ErrStr,
-        FAILURE     => 1,
-    );
 }
 
 sub HandleComment {
